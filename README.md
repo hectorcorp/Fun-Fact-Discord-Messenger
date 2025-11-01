@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+🧠 Fun Fact Discord Messenger
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and fun web app that lets you send random fun facts directly to your Discord account using a webhook.
+Built with Vite + React + TypeScript and styled using Tailwind CSS and DaisyUI.
 
-Currently, two official plugins are available:
+⚠️ This is a personal project created for learning and experimentation purposes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌟 Features
 
-## React Compiler
+🎲 Sends random fun facts via your Discord webhook
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌐 Clean and responsive UI built with Tailwind + DaisyUI
 
-## Expanding the ESLint configuration
+⚙️ Built using modern web tooling (Vite + React + TypeScript)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔐 Supports user-provided webhook URLs and authorization tokens
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🧰 Tech Stack
+Category	Tools
+Framework	React
+ + Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Language	TypeScript
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Styling	Tailwind CSS
+ + DaisyUI
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+API	Discord Webhooks
+Hosting (optional)	Firebase / Vercel / Netlify
+⚙️ Setup & Installation
+1. Clone the repository
+git clone https://github.com/<your-username>/fun-fact-discord-messenger.git
+cd fun-fact-discord-messenger
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. Install dependencies
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. Set up environment variables
+
+Create a .env file in the project root (if you plan to use keys or custom configs):
+
+VITE_DISCORD_WEBHOOK_URL=your_discord_webhook_url_here
+
+
+🔒 Never share your webhook URLs or private tokens publicly.
+
+4. Run the development server
+npm run dev
+
+
+Then open your browser at:
+👉 http://localhost:5173
+
+5. Build for production
+npm run build
+
+🧑‍💻 Author
+
+Hector Corpus
+Personal project — made just for fun and learning purposes 🎉
+
+📄 License
+
+This project is open-source and available under the MIT License.
