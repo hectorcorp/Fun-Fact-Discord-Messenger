@@ -27,7 +27,7 @@ Styling	Tailwind CSS + DaisyUI
 
 ⚙️ Setup & Installation
 1. Clone the repository
-git clone https://github.com/<your-username>/fun-fact-discord-messenger.git cd fun-fact-discord-messenger
+git clone https://github.com/hectorcorp/fun-fact-discord-messenger.git cd fun-fact-discord-messenger
 
 2. Install dependencies
 npm install
